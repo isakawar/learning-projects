@@ -43,9 +43,9 @@ def decode_message():
     print(decoded_text)
 
 
-if __name__ == "__main__":
+def main():
     run_status = True
-    while run_status == True:
+    while run_status:
         num_select = display_menu()
         if num_select == 1:
             encode_message()
@@ -55,3 +55,7 @@ if __name__ == "__main__":
             run_status = False
         else:
             print(" Incorect input")
+
+
+if __name__ == "__main__":
+    main()
